@@ -1,0 +1,68 @@
+/* Basic reset to ensure consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container for the category section */
+  .category-container {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 250px;
+  }
+  
+  .sidebar-title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .sidebar-label-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .sidebar-label-container input {
+    margin-right: 8px;
+  }
+  
+  .sidebar-label-container .checkmark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin-right: 8px;
+    position: relative;
+  }
+  
+  .sidebar-label-container input:checked + .checkmark {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .sidebar-label-container input:checked + .checkmark::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

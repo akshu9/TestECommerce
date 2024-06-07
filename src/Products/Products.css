@@ -1,0 +1,89 @@
+
+  .card-reviews {
+    margin-bottom: 1rem;
+    display: flex;
+  }
+  
+  .rating-star {
+    color: #d5ab55;
+  }
+  
+  .total-reviews {
+    font-size: 0.9rem;
+    margin-left: 10px;
+  }
+  
+  .card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bag-icon {
+    color: #535353;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .product-page-container {
+    display: flex;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-details {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 12px;
+  }
+  
+  .card-link {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .card-link:hover {
+    color: #0056b3;
+  }
